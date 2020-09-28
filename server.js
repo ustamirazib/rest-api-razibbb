@@ -4,6 +4,8 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const PORT = proccess.env.PORT || 8000
+
 //Import routes
 const postRoute = require('./routes/posts');
 
@@ -22,6 +24,6 @@ mongoose.connect("mongodb+srv://helloworld:gy2OS4l81K4nkV0t@cluster0.isqf8.mongo
     console.log("Connected to DB!")
 })
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
     console.log(`tersambung dengan port 8000`)
 })
