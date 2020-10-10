@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 app.use('/posts', postRoute);
 
 // Connect ke database
-mongoose.connect("mongodb+srv://helloworld:gy2OS4l81K4nkV0t@cluster0.isqf8.mongodb.net/postsDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect("mongodb+srv://razib123:razib123@cluster0.isqf8.mongodb.net/postsDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log("Connected to DB!")
 })
 
